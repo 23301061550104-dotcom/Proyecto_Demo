@@ -20,11 +20,6 @@ style.css → estilos y colores.
 
 script.js → lógica de los filtros, productos y carrito.
 
-Cómo usarlo
-
-Solo abre el archivo index.html en el navegador y podrás ver todo.
-Puedes usar los botones de filtro y también agregar productos al carrito para probarlo.
-
 Notas
 
 Es un proyecto de demostración, no es una tienda real.
@@ -35,4 +30,4 @@ Si algo no funciona, normalmente es porque el CSS o el JS no están bien enlazad
 
 Autor
 
-Proyecto realizado por Mena, estudiante de preparatoria.
+Proyecto realizado por Andrea Ximena Montes Rivera.

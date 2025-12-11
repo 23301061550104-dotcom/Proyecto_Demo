@@ -1,0 +1,174 @@
+/* Reset muy básico */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #E7C0BC; /* Baby Pink */
+  color: #370808; /* Black Bean */
+}
+
+/* HEADER */
+header {
+  background: #370808; /* Marvelous */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #D97E8A; /* New York Pink */
+}
+
+h1 { margin: 0; color: #8B3C46; /* Cordovan */ }
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0 0 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav button {
+  padding: 8px 15px;
+  border: none;
+  background: #D97E8A; /* New York Pink */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+nav button:hover { background: #EC9FAB; /* Marvelous */ }
+
+/* carrito botón */
+.carrito-btn {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: #8B3C46; /* Cordovan */
+  font-weight: 600;
+}
+
+/* Main / grid */
+main { padding: 20px; }
+h2 { text-align: center; color: #8B3C46; /* Cordovan */ }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+  padding: 0 20px 30px 20px;
+}
+
+.card {
+  background: #E7C0BC;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #EC9FAB; /* Marvelous */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+  transition: transform 0.18s ease;
+}
+
+.card:hover { transform: translateY(-6px); }
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 150px;
+}
+
+.card h3 { color: #8B3C46; /* Cordovan */ margin: 10px 0 6px 0; }
+.card p { margin: 0; color: #370808; /* Black Bean */ }
+.precio { font-weight: 700; color: #8B3C46; /* Cordovan */ margin-top: 8px; }
+
+.card button {
+  margin-top: 10px;
+  background: #D97E8A; /* New York Pink */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card button:hover { background: #EC9FAB; /* Marvelous */ }
+
+/* Modal carrito */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 9999;
+}
+
+.oculto { display: none; }
+
+.modal-content {
+  background: white;
+  width: min(540px, 92%);
+  max-width: 420px;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#listaCarrito {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#listaCarrito li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px dashed #EC9FAB; /* Marvelous */
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.modal-actions button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#vaciarCarrito { background: #EC9FAB; /* Marvelous */ }
+#cerrarCarrito { background: #D97E8A; /* New York Pink */ }
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  color: #370808; /* Black Bean */
+}
+/* FIX para que las tarjetas se acomoden bien */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Fix para las imágenes gigantes */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+}

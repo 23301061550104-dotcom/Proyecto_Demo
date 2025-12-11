@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Tienda Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>𝐓𝐈𝐄𝐍𝐃𝐀 𝐃𝐄𝐌𝐎</h1>
+
+    <nav>
+      <ul>
+        <li><button class="filtro" data-categoria="todos">Todos</button></li>
+        <li><button class="filtro" data-categoria="electronica">Electrónica</button></li>
+        <li><button class="filtro" data-categoria="ropa">Ropa</button></li>
+        <li><button class="filtro" data-categoria="libros">Libros</button></li>
+        <li><button class="filtro" data-categoria="Belleza">Belleza</button></li>
+        <li><button class="filtro" data-categoria="Hogar">Hogar</button></li>
+      </ul>
+    </nav>
+
+    <!-- Botón del carrito -->
+    <div class="carrito-btn" id="carritoBtn">
+      🛒 Carrito (<span id="cantidadCarrito">0</span>)
+    </div>
+
+  </header>
+
+  <main>
+    <h2>Productos</h2>
+    <div class="productos"></div>
+  </main>
+
+  <!-- Modal carrito -->
+  <div id="carritoModal" class="modal oculto" aria-hidden="true">
+    <div class="modal-content">
+
+      <h2 id="tituloCarrito">Tu carrito</h2>
+      <ul id="listaCarrito"></ul>
+
+      <div class="modal-actions">
+        <button id="vaciarCarrito">Vaciar carrito</button>
+        <button id="comprarCarrito">Comprar</button>
+        <button id="cerrarCarrito">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Creado por Andrea Montes</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
